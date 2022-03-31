@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url('/static/images/repeated-square.png');
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skill{
+    width: 50%;
+    position: relative;
+    margin: auto;
+    /* float: left; */
+    padding: 20px;
+
+}
+
+.outer1{
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 9px 9px 15px -1.5px rgba(0,0,0,0.3), -9px -9px 15px -1.5px rgba(255,255,255,0.7);
+    padding: 30px;
+    background-color: #FFFDFA ;
+    margin: auto;
+
+}
+
+.inner1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: inset 6px 6px 9px -1.5px rgba(0,0,0,0.2),
+    inset -6px -6px 9px -1.5px rgba(255,255,255,0.5),
+    -0.75px -0.75px 0px rgba(255,255,255,1), 0.75px 0.75px 0px rgba(0,0,0,0.15),
+    0px 18px 15px -15px rgba(0,0,0,0.05);
+    background-image: url('/static/images/repeated-square.png');
+}
+
+#number1{
+    font-weight: 800px;
+    color: #000000;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+} 
+
+circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 30px;
+    stroke-dasharray: 672px;
+    stroke-dashoffset: 672px;
+    animation:anim 2s linear forwards;
+}
+
+svg {
+    position:absolute;
+    top:306px;
+    left:463px;
+}
+
+@media screen and (max-width: 600px) {
+    svg{
+        top: 228px;
+        left: 153px;
+    }
+}
+    
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 520px;
+    }
+}
