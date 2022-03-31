@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="static/styles/mainpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <!-- add icon in navbar  -->    
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static',filename='images/angry.png') }}" width="" height="45" class=" align-top" alt=""></a>
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static',filename='images/smiling.png') }}" width="45" height="45" class=" align-top" alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static',filename='images/sad.png') }}" width="45" height="45" class=" align-top" alt="">
+            </a>
+        
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static',filename='images/surprised.png') }}" width="45" height="45" class=" align-top" alt="">
+            </a>
+            
+    </nav>
+
+    <div class="container">
+            <div class="row" style="margin-top: 7%; margin-bottom: 10%;">
+                <div class="col-md-12">
+                    <h1 class="text-center">Crypto Fear & Greed Index</h1>
+                </div>
+            </div>
+
+
+<div class="float-container">
+    <div class="skill">
+        <div class="outer1">
+            <div class="inner1">
+                    <div id="number1">
+                        <h2>
+                            {{ data }}
+                        </h2>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="child">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="240px" height="240px">
+            <defs>
+            <linearGradient id="GradientColor">
+                <stop offset="40%" stop-color="#CA0B00" />
+                <stop offset="100%" stop-color="#4CBB17" />
+            </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="105" stroke-linecap="round" />
+        </svg>
+    </div>
+</div>
+
+<script>
+    
+</script>
+
+</body>
+</html>
