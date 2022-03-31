@@ -20,7 +20,7 @@ bg.start()
 app = flask.Flask(__name__)
 
 
-@app.route('/home')
+@app.route('fear-freed.herokuapp.com/home')
 def Home():
     fear()
     with open('fear.pkl', 'rb') as f:
